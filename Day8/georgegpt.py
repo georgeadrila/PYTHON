@@ -1,12 +1,12 @@
 import openai
 from langdetect import detect
 
-openai.api_key = "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"
+openai.api_key = "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"
 
 # Function to generate a completion
 def generate_completion(prompt):
     response = openai.Completion.create(
-        engine="davinci-codex",
+        engine="text-davinci-003",
         prompt=prompt,
         max_tokens=1048,
         temperature=0.5,
