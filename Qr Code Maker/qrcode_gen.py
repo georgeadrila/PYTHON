@@ -10,10 +10,10 @@ def generate_qr_code(text, file_name):
 
     qr.add_data(text)
     qr.make(fit=True)
-    img = qr.make_image(fill_color="black", back_color="white")
+    img = qr.make_image(fill_color="white", back_color="black")
     img.save(file_name)
 
-text = "https://www.adygadgets.com"
-file_name = "qrcodegen.png"
+text = "https://www.adygadgets.com#products"
+file_name = "adygadgets.png"
 generate_qr_code(text, file_name)
 print(f"QR Code for {text} is saved as {file_name}")
