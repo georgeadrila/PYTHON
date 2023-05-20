@@ -13,7 +13,7 @@ def generate_qr_code(text, file_name):
     img = qr.make_image(fill_color="white", back_color="black")
     img.save(file_name)
 
-text = "https://www.adygadgets.com#products"
-file_name = "adygadgets.png"
+text = "Ssenabulya Stuart"
+file_name = "{text}.png"
 generate_qr_code(text, file_name)
 print(f"QR Code for {text} is saved as {file_name}")
